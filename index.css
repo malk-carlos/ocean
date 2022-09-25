@@ -109,22 +109,42 @@ h1 {
     margin: 0 5%;
 }
 
+#t5 p {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+#t5 p a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: .7em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 #t6 {
     text-align: center;
 }
 
 footer{
     width: 100%;
-    height: 30vh;
+    height: 15em;
     background-color: #39BAE888;
     text-align: center;
     position: relative;
 }
 
+footer p {
+    font-size: small;
+}
+
 #logo {
     display: inline-block;
-    width: 90%;
-    height: 15%;
+    width: 100%;
+    height: 12.5%;
     margin-top: 5%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -139,11 +159,9 @@ footer{
     color: var(--text);
     margin-top: 2.5%;
     margin-bottom: 1.5%;
-    font-size: small;
 }
 
 #copy {
     color: var(--text);
-    font-size: small;
     margin-top: 3%;
 }
