@@ -1,121 +1,149 @@
-*{
+/* モバイル版デザインのみ作成 */
+
+:root{
+    --shadow:#0000A1;
+    --dark:#1F6ED4;
+    --title:#39BAE8;
+    --back:#B9EDF8;
+    --text:#000031;
+}
+
+* {
     margin: 0;
 }
 
-body{
-    background-color: #ff8090;
-    height: 100vh;
-}
-
-header{
-    background-color: #fff8;
-    height: 10%;
+body {
+    position: relative;
+    background-color: var(--back);
     width: 100vw;
-    text-align: center;
-    position: relative;
+    background-image: url(./src/wave-sea.jpg);
+    background-color: rgba(240,240,255,0.5);
+    background-blend-mode: lighten;
 }
 
-header p{
-    display: inline-block;
-    color: #000;
-    position: absolute;
-    font-size: 2em;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
+.pointer {
+    cursor: pointer;
 }
 
-header button{
-    display: inline-block;
-    position: absolute;
-    font-size: 2em;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5%;
-    background-color: #ff8090;
-    border-radius: 10px;
-    border-color: #fff;
-    color: #fff;
-    width: 20%;
-}
-
-main{
-    position: relative;
-}
-
-main button{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    background-color: #fff8;
-    border: 0;
-    border-radius: 5px;
-    width: 10%;
-    height: 30px;
-    z-index: 100;
-}
-
-main button:hover{
-    background-color: #fff;
-}
-
-#enpty{
-    height: 70vh;
-}
-
-.pet{
-    width: 48px;
-    display: none;
-}
-
-
-.pet{
-    width: 48px;
-    height: 100px;
-    display: none;
-    position: relative;
-
-}
-
-.pet img{
-    width: 80%;
-    position: absolute;
+header {
+    width: 100vw;
+    height: 7.5%;
+    position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    background-color: #39BAE888;
+    margin-bottom: 8%;
+    z-index: 5;
 }
 
-.pet p{
+#catch {
+    height: 75%;
     position: absolute;
-    font-size: 0.8em;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+#m1 {
+    padding-top: 12.5vh;
+}
+
+.msect {
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+h1 {
+    color: var(--title);
+    text-shadow: 1px 1px 3px #0000A1;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.text {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.text h2 {
+    font-size: 1.25em;
+    color: var(--dark);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.text p {
+    margin-top: 3%;
+    color: var(--text);
+}
+
+#pet {
+    color: var(--dark);
+    font-size: small;
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#sdg-imgs {
+    display: inline-block;
+    height: 25vw;
+    width: calc((100 / 85) * 100%);
+    margin-left: -9%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10% 0;
+}
+
+#sdg-imgs img {
+    color: var(--dark);
+    font-size: small;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#t6 {
+    text-align: center;
 }
 
 footer{
-    position: relative;
-    background-color: #fff;
-    height: 20%;
     width: 100%;
+    height: 30vh;
+    background-color: #39BAE888;
     text-align: center;
+    position: relative;
 }
 
-#teamlogo{
+#logo {
     display: inline-block;
-    width: 20%;
-    margin: 30px 10px;
-}
-
-#prnlogo{
-    display: inline-block;
-    width: 10%;
-    margin: 30px 10px;
-}
-
-footer p{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
+    width: 90%;
+    height: 15%;
+    margin-top: 5%;
+    margin-left: 50%;
     transform: translateX(-50%);
+}
+
+#logo img {
+    height: 100%;
+    margin: 2%;
+}
+
+#des {
+    color: var(--text);
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+    font-size: small;
+}
+
+#copy {
+    color: var(--text);
+    font-size: small;
+    margin-top: 3%;
 }

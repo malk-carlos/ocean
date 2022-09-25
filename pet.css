@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #ff8090;
+    height: 100vh;
+}
+
+header{
+    background-color: #fff8;
+    height: 10%;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+}
+
+header p{
+    display: inline-block;
+    color: #000;
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+header button{
+    display: inline-block;
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    background-color: #ff8090;
+    border-radius: 10px;
+    border-color: #fff;
+    color: #fff;
+    width: 20%;
+}
+
+main{
+    position: relative;
+}
+
+main button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff8;
+    border: 0;
+    border-radius: 5px;
+    width: 10%;
+    height: 30px;
+    z-index: 100;
+}
+
+main button:hover{
+    background-color: #fff;
+}
+
+#enpty{
+    height: 70vh;
+}
+
+.pet{
+    width: 48px;
+    display: none;
+}
+
+
+.pet{
+    width: 48px;
+    height: 100px;
+    display: none;
+    position: relative;
+
+}
+
+.pet img{
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pet p{
+    position: absolute;
+    font-size: 0.8em;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer{
+    position: relative;
+    background-color: #fff;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+#teamlogo{
+    display: inline-block;
+    width: 20%;
+    margin: 30px 10px;
+}
+
+#prnlogo{
+    display: inline-block;
+    width: 10%;
+    margin: 30px 10px;
+}
+
+footer p{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
